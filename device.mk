@@ -20,6 +20,7 @@ PRODUCT_CHARACTERISTICS  := tablet,nosdcard
 PRODUCT_AAPT_CONFIG      := normal large xlarge
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+$(call inherit-product, $(LOCAL_PATH)/go_defaults.mk)
 $(call inherit-product, $(LOCAL_PATH)/hidl/hidl.mk)
 $(call inherit-product, $(LOCAL_PATH)/permissions/permissions.mk)
 $(call inherit-product, $(LOCAL_PATH)/vendor/common-by-flags.mk) 
@@ -50,10 +51,6 @@ PRODUCT_PACKAGES += \
 	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.dragon:$(TARGET_COPY_OUT_RAMDISK)/fstab.dragon
-
-# Art
-# Speed profile services and wifi-service to reduce RAM and storage.
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Audio
 PRODUCT_PACKAGES += \

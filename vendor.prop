@@ -53,15 +53,27 @@ ro.opengles.version=196610
     
 # Graphics (Vulkan)
 ro.hardware.vulkan=tegra
-    
+
+# Go
+# Set lowram options
+ro.lmk.critical_upgrade=true
+ro.lmk.upgrade_pressure=40
+ro.lmk.downgrade_pressure=60
+ro.lmk.kill_heaviest_task=false
+
+# set threshold to filter unused apps
+pm.dexopt.downgrade_after_inactive_days=10
+
+# set the compiler filter for shared apks to quicken.
+pm.dexopt.shared=quicken
+
+# Default heap sizes.
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+
 # Healthd
 ro.enable_boot_charger_mode=1
 
-# LMK
-ro.lmk.log_stats=true
-ro.lmk.use_minfree_levels=true
-ro.lmk.use_psi=false
- 
 # Mobile Data Provision
 ro.com.android.prov_mobiledata=false
 
