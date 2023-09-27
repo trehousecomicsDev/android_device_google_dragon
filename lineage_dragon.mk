@@ -33,7 +33,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE                := dragon
-PRODUCT_NAME                  := lineage_dragon
+PRODUCT_NAME                  := aosp_dragon
 PRODUCT_BRAND                 := Google
 PRODUCT_MODEL                 := Pixel C
 PRODUCT_MANUFACTURER          := google
