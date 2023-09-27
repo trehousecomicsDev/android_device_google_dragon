@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/lineage_dragon.mk \
+	$(LOCAL_DIR)/aosp_dragon.mk \
 
 COMMON_LUNCH_CHOICES := \
-	lineage_dragon-userdebug \
-	lineage_dragon-eng
+	aosp_dragon-userdebug \
+	aosp_dragon-eng
